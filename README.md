@@ -2,7 +2,7 @@
 
 The menu management module is for creating custom menu structures when the site tree hierarchy just won't do.
 
-The latest version only supports SilverStripe 4, see the 2.0 branch for a SilverStripe 3.x compatible version.
+The latest version only supports SilverStripe 3, see the 1.0 branch for a SilverStripe 2.4 compatible version.
 
 ## License
 
@@ -25,7 +25,7 @@ Create or edit a `composer.json` file in the root of your SilverStripe project, 
 ```json
 {
     "require": {
-        "heyday/silverstripe-menumanager": "~3.0.0"
+        "heyday/silverstripe-menumanager": "~2.1.0"
     }
 }
 ```
@@ -45,7 +45,7 @@ This is pretty straight forward. You just give the MenuSet a Name (which is what
 As it is common to reference MenuSets by name in templates, you can configure sets to be created automatically during the /dev/build task. These sets cannot be deleted through the CMS.
 
 ```yaml
-Heyday\MenuManager\MenuSet:
+MenuSet:
   default_sets:
     - Main
     - Footer
@@ -92,8 +92,8 @@ Can be used as a check to see if 'target="_blank"' should be added to links.
 
 This project follows the standards defined in:
 
-* [PSR-1](http://www.php-fig.org/psr/psr-1/)
-* [PSR-2](http://www.php-fig.org/psr/psr-2/)
+* [PSR-1](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-1-basic.md)
+* [PSR-2](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-2-advanced.md)
 
 
 
